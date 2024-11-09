@@ -1,8 +1,9 @@
 {
-  "name": "@dq/tools-config",
+  "name": "@dq/tools-configs",
   "version": "1.0.0",
   "description": "Configurations used by the Dynamic Quants Team",
   "exports": "./src/mod.ts",
+  "license": "MIT",
   "tasks": {
     "fmt": "deno fmt"
   },

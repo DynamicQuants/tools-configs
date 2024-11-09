@@ -1,19 +1,10 @@
-import type { Config } from 'jest';
-// deno-lint-ignore no-unused-vars
-import type { Config as ConfigNamespace } from '@jest/types';
-import nextJest from 'next/jest';
+import nextJest from 'next/jest/dist/index.js';
 import { config as baseConfig } from './base.ts';
 
+// For more information about the config options, see:
+// https://nextjs.org/docs/app/building-your-application/testing/jest
 const createJestConfig = nextJest({
   dir: './',
 });
 
-// To see more about the config options, see:
-// https://nextjs.org/docs/pages/building-your-application/testing/jest
-
-const config = {
-  ...baseConfig,
-  moduleFileExtensions: [...baseConfig.moduleFileExtensions, 'jsx', 'tsx', 'ts'],
-} as const satisfies Config;
-
-export default createJestConfig(config);
+export default createJestConfig(baseConfig);

@@ -30,5 +30,10 @@
     "indentWidth": 2,
     "semiColons": true,
     "useTabs": false
+  },
+  "lint": {
+    "rules": {
+      "exclude": ["no-unused-vars"]
+    }
   }
 }

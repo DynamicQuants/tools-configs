@@ -1,8 +1,8 @@
 import type { Config } from 'jest';
-import { config as baseConfig } from './base.ts';
+import { jestBaseConfig } from './base.ts';
 
-const config = {
-  ...baseConfig,
+export const jestNestjsConfig = {
+  ...jestBaseConfig,
   testEnvironment: 'node',
   testRegex: '.spec.ts$',
   rootDir: '.',
@@ -10,5 +10,3 @@ const config = {
     '^.+\\.(t|j)s$': 'ts-jest',
   },
 } as const satisfies Config;
-
-export default config;

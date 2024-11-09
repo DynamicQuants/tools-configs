@@ -9,4 +9,4 @@ export const jestNestjsConfig = {
   transform: {
     '^.+\\.(t|j)s$': 'ts-jest',
   },
-} as const satisfies Config;
+} as Config;

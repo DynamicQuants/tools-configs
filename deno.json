@@ -1,6 +1,6 @@
 {
   "name": "@dq/tools-configs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Configurations used by the Dynamic Quants Team",
   "exports": {
     "./jest": "./src/jest-config/mod.ts",

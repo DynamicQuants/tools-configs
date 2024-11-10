@@ -1,27 +1,47 @@
 {
   "name": "@dq/tools-configs",
-  "version": "1.0.3",
+  "version": "1.0.9",
   "description": "Configurations used by the Dynamic Quants Team",
-  "exports": {
-    "./jest": "./src/jest-config/mod.ts",
-    "./typescript": "./src/typescript-config/mod.ts"
-  },
   "license": "MIT",
   "tasks": {
     "fmt": "deno fmt"
+  },
+  "exports": {
+    "./eslint/base.js": "./src/eslint/base.js",
+    "./eslint/library.js": "./src/eslint/library.js",
+    "./eslint/nextjs.js": "./src/eslint/nextjs.js",
+    "./eslint/nestjs.js": "./src/eslint/nestjs.js",
+    "./eslint/prettier.js": "./src/eslint/prettier.js",
+    "./eslint/react-internal.js": "./src/eslint/react-internal.js",
+    "./jest": "./src/jest/mod.ts",
+    "./typescript/base.json": "./src/typescript/base.json",
+    "./typescript/nestjs-library.json": "./src/typescript/nestjs-library.json",
+    "./typescript/nestjs.json": "./src/typescript/nestjs.json",
+    "./typescript/nextjs.json": "./src/typescript/nextjs.json",
+    "./typescript/react-library.json": "./src/typescript/react-library.json"
   },
   "imports": {
     "@jest/types": "npm:@jest/types@^29.6.3",
     "@std/assert": "jsr:@std/assert@1",
     "@types/jest": "npm:@types/jest@^29.5.14",
+    "@typescript-eslint/eslint-plugin": "npm:@typescript-eslint/eslint-plugin@^8.13.0",
+    "@typescript-eslint/parser": "npm:@typescript-eslint/parser@^8.13.0",
+    "@vercel/style-guide": "npm:@vercel/style-guide@^6.0.0",
+    "eslint": "npm:eslint@^9.14.0",
+    "eslint-config-prettier": "npm:eslint-config-prettier@^9.1.0",
+    "eslint-plugin-only-warn": "npm:eslint-plugin-only-warn@^1.1.0",
+    "eslint-plugin-prettier": "npm:eslint-plugin-prettier@^5.2.1",
     "jest": "npm:jest@^29.7.0",
-    "next": "npm:next@^15.0.3"
+    "next": "npm:next@^15.0.3",
+    "prettier": "npm:prettier@^3.3.3",
+    "typescript": "npm:typescript@^5.6.3"
   },
   "publish": {
     "include": [
       "LICENSE",
       "README.md",
       "src/**/*.ts",
+      "src/**/*.js",
       "src/**/*.json"
     ]
   },

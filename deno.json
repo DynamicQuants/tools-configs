@@ -1,6 +1,6 @@
 {
   "name": "@dq/tools-configs",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Configurations used by the Dynamic Quants Team",
   "license": "MIT",
   "tasks": {
@@ -18,7 +18,9 @@
     "./typescript/nestjs-library.json": "./src/typescript/nestjs-library.json",
     "./typescript/nestjs.json": "./src/typescript/nestjs.json",
     "./typescript/nextjs.json": "./src/typescript/nextjs.json",
-    "./typescript/react-library.json": "./src/typescript/react-library.json"
+    "./typescript/react-library.json": "./src/typescript/react-library.json",
+    "./tailwind/tailwind.config.ts": "./src/tailwind/tailwind.config.ts",
+    "./tailwind/styles.css": "./src/tailwind/styles.css"
   },
   "imports": {
     "@jest/types": "npm:@jest/types@^29.6.3",
@@ -34,6 +36,7 @@
     "jest": "npm:jest@^29.7.0",
     "next": "npm:next@^15.0.3",
     "prettier": "npm:prettier@^3.3.3",
+    "tailwindcss": "npm:tailwindcss@^3.4.14",
     "typescript": "npm:typescript@^5.6.3"
   },
   "publish": {
@@ -42,7 +45,8 @@
       "README.md",
       "src/**/*.ts",
       "src/**/*.js",
-      "src/**/*.json"
+      "src/**/*.json",
+      "src/**/*.css"
     ]
   },
   "nodeModulesDir": "auto",

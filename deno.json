@@ -1,14 +1,10 @@
 {
   "name": "@dq/tools-configs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Configurations used by the Dynamic Quants Team",
   "exports": {
     "./jest": "./src/jest-config/mod.ts",
-    "./typescript/base.json": "./src/typescript-config/base.json",
-    "./typescript/nestjs-library.json": "./src/typescript-config/nestjs-library.json",
-    "./typescript/nestjs.json": "./src/typescript-config/nestjs.json",
-    "./typescript/nextjs.json": "./src/typescript-config/nextjs.json",
-    "./typescript/react-library.json": "./src/typescript-config/react-library.json"
+    "./typescript": "./src/typescript-config/mod.ts"
   },
   "license": "MIT",
   "tasks": {

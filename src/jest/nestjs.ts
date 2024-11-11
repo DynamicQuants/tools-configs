@@ -1,5 +1,5 @@
 import type { Config } from 'jest';
-import { jestBaseConfig } from './base.ts';
+import { jestBaseConfig } from './base';
 
 export const jestNestjsConfig = {
   ...jestBaseConfig,

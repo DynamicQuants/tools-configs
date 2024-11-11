@@ -1,5 +1,5 @@
-import nextJest from 'next/jest/dist/index.js';
-import { jestBaseConfig } from './base.ts';
+import nextJest from 'next/jest';
+import { jestBaseConfig } from './base';
 import type { Config } from 'jest';
 
 // For more information about the config options, see:

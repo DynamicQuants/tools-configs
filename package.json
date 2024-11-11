@@ -1,10 +1,10 @@
 {
   "name": "@dynamic-quants/tools-configs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Configurations used by the Dynamic Quants Team",
   "license": "MIT",
   "files": [
-    "dist/**/*.{js,ts,json,css}"
+    "**/*.{js,ts,json,css}"
   ],
   "scripts": {
     "build": "tsup",

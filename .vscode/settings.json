@@ -1,7 +1,4 @@
 {
-  "deno.enable": true,
-  "deno.lint": true,
-  "deno.disablePaths": ["node_modules"],
-  "editor.defaultFormatter": "denoland.vscode-deno",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true
 }

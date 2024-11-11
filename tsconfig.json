@@ -1,6 +1,6 @@
 {
   "extends": "./src/typescript/base.json",
   "compilerOptions": {
-    "outDir": "."
+    "outDir": "./dist"
   }
 }

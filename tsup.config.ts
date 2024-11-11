@@ -10,5 +10,6 @@ export default defineConfig((options: Options) => ({
   clean: true,
   tsconfig: 'tsconfig.json',
   splitting: false,
+  outDir: './dist',
   ...options,
 }));

@@ -1,3 +1,6 @@
 {
-  "extends": "./src/typescript/base.json"
+  "extends": "./src/typescript/base.json",
+  "compilerOptions": {
+    "outDir": "."
+  }
 }

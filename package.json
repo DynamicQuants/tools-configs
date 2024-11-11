@@ -7,7 +7,7 @@
     "eslint/*.js",
     "jest/*.ts",
     "prettier/*.js",
-    "tailwindcss/*.{ts,css}",
+    "tailwind/*.{ts,css}",
     "typescript/*.json",
     "package.json",
     "README.md",

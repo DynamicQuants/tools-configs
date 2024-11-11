@@ -4,14 +4,12 @@
   "description": "Configurations used by the Dynamic Quants Team",
   "license": "MIT",
   "files": [
-    "src/**/*.{js,ts,json,css}"
+    "dist/**/*.{js,ts,json,css}"
   ],
   "scripts": {
     "build": "tsup",
     "build:dev": "tsup --watch",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md,json,css}\""
   },
   "devDependencies": {
     "@jest/types": "^29.6.3",
@@ -28,7 +26,6 @@
     "prettier": "^3.3.3",
     "tailwindcss": "^3.4.14",
     "tsup": "^8.3.5",
-    "turbo": "^2.2.3",
     "typescript": "^5.6.3"
   },
   "packageManager": "pnpm@9.11.0",
@@ -36,6 +33,6 @@
     "node": ">=18"
   },
   "publishConfig": {
-  "access": "public"
-}
+    "access": "public"
+  }
 }

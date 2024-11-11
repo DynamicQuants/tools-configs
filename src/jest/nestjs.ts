@@ -1,7 +1,7 @@
 import type { Config } from 'jest';
-import { jestBaseConfig } from './base';
+import jestBaseConfig from './base';
 
-export const jestNestjsConfig = {
+export default {
   ...jestBaseConfig,
   testEnvironment: 'node',
   testRegex: '.spec.ts$',

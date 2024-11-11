@@ -1,6 +1,6 @@
 {
   "name": "@dynamic-quants/tools-configs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Configurations used by the Dynamic Quants Team",
   "license": "MIT",
   "files": [

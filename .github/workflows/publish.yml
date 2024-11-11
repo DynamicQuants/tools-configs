@@ -2,7 +2,7 @@ name: Publish to npm
 
 on:
   release:
-    types: [released]
+    types: [created]
 
 jobs:
   publish:
@@ -15,9 +15,8 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20.x'
+          node-version: 20
           registry-url: 'https://registry.npmjs.org'
-          scope: '@DynamicQuants'
 
       - name: Install pnpm
         run: npm install -g pnpm
@@ -26,6 +25,6 @@ jobs:
         run: pnpm install
 
       - name: Publish to npm
-        run: pnpm publish
+        run: pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

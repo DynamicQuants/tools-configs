@@ -12,7 +12,7 @@ module.exports = {
     JSX: true,
   },
   env: {
-    node: true,
+    browser: true,
   },
   settings: {
     'import/resolver': {
@@ -28,8 +28,7 @@ module.exports = {
     'dist/',
   ],
   overrides: [
-    {
-      files: ['*.js?(x)', '*.ts?(x)'],
-    },
+    // Force ESLint to detect .tsx files
+    { files: ['*.js?(x)', '*.ts?(x)'] },
   ],
 };

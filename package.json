@@ -1,6 +1,6 @@
 {
   "name": "@dynamic-quants/tools-configs",
-  "version": "1.0.18",
+  "version": "1.0.19-beta.1",
   "description": "Configurations used by the Dynamic Quants Team",
   "author": "Dynamic Quants",
   "license": "MIT",
@@ -9,17 +9,30 @@
     "url": "https://github.com/DynamicQuants/tools-configs.git"
   },
   "files": [
-    "eslint/*.js",
-    "jest/*.ts",
-    "prettier/*.js",
-    "tailwind/*.{ts,css}",
-    "typescript/*.json",
-    "package.json",
-    "README.md",
-    "LICENSE"
+    "dist/typescript/*.json"
   ],
+  "exports": {
+    "./eslint": {
+      "import": "./dist/eslint/index.js",
+      "require": "./dist/eslint/index.js"
+    },
+    "./jest": {
+      "import": "./dist/jest/index.js",
+      "require": "./dist/jest/index.js"
+    },
+    "./tailwind": {
+      "import": "./dist/tailwind.ts",
+      "require": "./dist/tailwind.ts"
+    },
+    "./prettier": {
+      "import": "./dist/prettier.js",
+      "require": "./dist/prettier.js"
+    },
+    "./typescript/*": "./dist/typescript/*"
+  },
   "scripts": {
-    "format": "prettier --write \"**/*.{ts,tsx,md,json,css}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "build": "tsup --onSuccess \"cp -a ./src/typescript dist/\""
   },
   "devDependencies": {
     "@jest/types": "^29.6.3",
@@ -35,6 +48,7 @@
     "next": "^15.0.3",
     "prettier": "^3.3.3",
     "tailwindcss": "^3.4.14",
+    "tsup": "^8.3.5",
     "typescript": "^5.6.3"
   },
   "packageManager": "pnpm@9.11.0",

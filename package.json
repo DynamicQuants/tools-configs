@@ -1,6 +1,6 @@
 {
   "name": "@dynamic-quants/tools-configs",
-  "version": "1.0.19-beta.1",
+  "version": "1.0.19-beta.2",
   "description": "Configurations used by the Dynamic Quants Team",
   "author": "Dynamic Quants",
   "license": "MIT",
@@ -8,15 +8,18 @@
     "type": "git",
     "url": "https://github.com/DynamicQuants/tools-configs.git"
   },
+  "files": [
+    "./dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "exports": {
     "./eslint": {
       "import": "./dist/eslint/index.js",
       "require": "./dist/eslint/index.js"
     },
-    "./jest": {
-      "import": "./dist/jest/index.js",
-      "require": "./dist/jest/index.js"
-    },
+    "./jest/*": "./dist/jest/*.js",
     "./tailwind": {
       "import": "./dist/tailwind.ts",
       "require": "./dist/tailwind.ts"

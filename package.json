@@ -15,20 +15,11 @@
     "LICENSE"
   ],
   "exports": {
-    "./eslint": {
-      "import": "./dist/eslint/index.js",
-      "require": "./dist/eslint/index.js"
-    },
+    "./eslint/*": "./dist/eslint/*.js",
     "./jest/*": "./dist/jest/*.js",
-    "./tailwind": {
-      "import": "./dist/tailwind.ts",
-      "require": "./dist/tailwind.ts"
-    },
-    "./prettier": {
-      "import": "./dist/prettier.js",
-      "require": "./dist/prettier.js"
-    },
-    "./typescript/*": "./dist/typescript/*"
+    "./tailwind": "./dist/tailwind.ts",
+    "./prettier": "./dist/prettier.js",
+    "./typescript/*": "./dist/typescript/*.json"
   },
   "scripts": {
     "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
